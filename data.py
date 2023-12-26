@@ -61,17 +61,4 @@ question_data = question_data = [
 
 
 
-def remove_duplicate_questions(question_list):
-    unique_questions = []
-    seen_questions = set()
 
-    for question in question_list:
-        question_text = question["text"]
-        if question_text not in seen_questions:
-            unique_questions.append(question)
-            seen_questions.add(question_text)
-
-    return unique_questions
-
-# Example usage:
-unique_question_data = remove_duplicate_questions(question_data)
